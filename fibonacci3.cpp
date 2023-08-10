@@ -43,4 +43,4 @@ prev1=curi;
 
 cout<<prev1<<endl;
 
-}
+} 
