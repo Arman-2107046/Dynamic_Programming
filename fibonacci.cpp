@@ -1,11 +1,17 @@
-#include<bits/stdc++.h>
-using namespace std;
+#include <bits/stdc++.h>
+using namespace std;//recursion solution
 
-int main()
+int f(int n)
 {
-    cout<<"hello world"<<endl;
-    cout<<"hello world"<<endl;
-    cout<<"hello world"<<endl;
-    cout<<"hello world"<<endl;
-    cout<<"hello world"<<endl;
+    if (n <= 1)
+        return n;
+    return f(n - 1) + f(n - 2);
+}
+
+int main() // fibonacci using dp
+{
+    int n;
+    cin >> n;
+
+    cout << f(n);
 }
