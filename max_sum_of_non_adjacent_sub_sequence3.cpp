@@ -10,7 +10,7 @@ int main()
     vector<int> dp(n, -1);
 
     dp[0] = nums[0];
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i < n; i++)
     {
         int take = nums[i];
         if (i > 1)
@@ -23,7 +23,7 @@ int main()
         dp[i] = max(take, not_take);
     }
 
-    cout << dp[n] << endl;
+    cout << dp[n-1] << endl;
 }
 */
 
